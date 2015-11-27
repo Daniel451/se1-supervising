@@ -1,0 +1,78 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Author: Daniel Speck  %%
+%%  Created on: 27.11.15  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+
+\usepackage{listings}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows,positioning} 
+
+\lstset{language=Java,
+keywordstyle=\color{blue},
+commentstyle=\color{ForestGreen},
+stringstyle=\color{Maroon},
+basicstyle=\ttfamily\normalsize,
+frame=lines,
+showspaces=false,
+showstringspaces=false,
+tabsize=4,
+aboveskip=10pt,
+belowskip=10pt,
+lineskip=2pt,
+numbers=left,
+numberstyle=\tiny,
+stepnumber=1,
+numbersep=5pt,
+numberblanklines=false,
+breaklines,
+breakatwhitespace,
+prebreak=\_,
+breakindent=0pt
+}
+
+\tikzset{
+    %Define standard arrow tip
+    >=stealth',
+    %Define style for boxes
+    punkt/.style={
+           rectangle,
+           rounded corners,
+           draw=black, very thick,
+           text width=6.5em,
+           minimum height=2em,
+           text centered},
+    % Define arrow style
+    pil/.style={
+           ->,
+           thick,
+           shorten <=2pt,
+           shorten >=2pt,}
+}
+
+
+
+
+
+
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%
+%%%%% begin pdf %%%%%
+%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{lstlisting}
+public gibWert(int a)
+{
+	// comment
+}
+\end{lstlisting}
+
+
+%%%%%%%%%%%%%%%%%%%
+%%%%% end pdf %%%%%
+%%%%%%%%%%%%%%%%%%%
+\end{document}
